@@ -1,0 +1,153 @@
+body{
+	background-color: black;
+	font-family: "VG5000","Impact";
+}
+
+
+h1{
+	color: white;
+	margin-left: 70px;
+	margin-top: 80px;
+	font-size: 5em;
+	font-weight: 700;
+}
+
+h2{
+    color: white;
+    margin-top: 50px;
+    margin-left: 70px;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h3{
+    color: white;
+    margin-top: -250px;
+    margin-left: 70px;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h4{
+    color: white;
+    margin-top: 150px;
+    margin-left: 70px;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+
+ul li{
+	font-size: 2em;
+	position: relative;
+	left: 700px;
+	top: -150px;
+	display :inline-block;
+	margin: 0 15px;	
+	justify-content: space-between;
+}
+
+a{
+	text-decoration: none;
+	color:white;
+}
+
+a:visited{
+	color: mediumpurple;
+}
+
+a:active{
+	font-size: 1em;
+}
+
+a:hover li{
+	color: lightblue;
+}
+
+
+#def{
+	margin-left: 70px;
+	margin-right: 980px;
+	margin-top: 220px;
+	position: relative;
+	top: -200px;
+	color: white;
+	font-weight: 100;
+}
+
+
+#cd_txt{
+	margin-left: 300px;
+	margin-right: 800px;
+	margin-top: -130px;
+	color: white;
+	font-weight: 100;
+}
+
+
+#btncd {
+	margin-top: 20px;
+	margin-left: 70px;
+	width: 200px;
+	cursor: pointer;
+}
+
+#btnpause {
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 80px;
+	cursor: pointer;
+}
+
+#btnplay {
+	margin-top: 40px;
+	margin-left: 70px;
+	width: 80px;
+	cursor: pointer;
+}
+
+#photo {
+	width: 100px;
+	cursor: pointer;
+	position: relative;
+	left: 600px;
+	top: -340px;
+	margin: 0 15px;
+	justify-content: space-between;
+}
+
+#photo:hover{
+	transform: scale(1.5);
+}
+
+
+#video{
+	height: 100vh;
+	width: 100vw;
+	object-fit: cover; /**ratio d'affichage maintenu et remplissage de la boîte
+	de contenu**/
+	position: fixed; /**apparaît toujours à la même place dans la page**/
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1; /**permet d'être en arrière plan derrière les autres éléments**/
+	opacity: 0;
+}
+
+#rave_txt{
+	margin-left: 70px;
+	margin-right: 800px;
+	margin-top: 20px;
+	color: white;
+	font-weight: 100;
+}
+
+#wiki{
+	margin-left: 1400px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 50px;
+	color: white;
+	font-weight: 100;
+}

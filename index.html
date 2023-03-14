@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style/reset.css">
+		<link rel="stylesheet" type="text/css" href="style/webfonts/font.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<title>RAVE PARTY ✦✩</title>
+	</head>
+
+	<body>
+
+		<!--RAVE PARTY-->
+
+			<h1>Rave<br>Party</h1>
+
+			<ul> 
+				<a href="#titre_def" target="_self"> <li>Définition</li> </a>
+				<a href="#titre_listen" target="_self"> <li>Listen to the Rave</li></a>
+				<a href="#titre_enter" target="_self"> <li>Enter the Rave</li> </a>
+			</ul>
+
+
+		<!--C'EST QUOI UNE RAVE?-->
+			<h2 id="titre_def">C'est quoi une rave?</h2>
+
+			<p id="def">
+				Une Rave Party, ou simplement Rave, est une Soirée TEK ou Envent qui contrairement un rassemblement autour de la musique électronique underground.
+
+				À l'origine organisée en pleine nature, ou dans des lieux déserts (entrepôt désaffecté, usines abandonnées) une Rave est aujourd'hui organisée dans des Clubs, salles de concerts, ou même dans une salle des fêtes. Beaucoup de personnes confondent Free Party et Rave Party.
+			</p>
+
+			<!--Importation des photos de rave-->
+			<img src="import/photo1.png" id="photo" alt="rave party,techno,party">
+			<img src="import/photo2.png" id="photo" alt="rave party,techno,party">
+			<img src="import/photo3.png" id="photo" alt="rave party,techno,party">
+			<img src="import/photo4.png" id="photo" alt="rave party,techno,party">
+			<img src="import/photo5.png" id="photo" alt="rave party,techno,party">
+			<img src="import/photo6.png" id="photo" alt="rave party,techno,party">
+
+
+		<!--LISTEN TO THE RAVE-->
+
+			<h3 id="titre_listen">Listen to the rave</h3>
+
+			<img src="import/cd.png" id="btncd">
+
+			<p id="cd_txt">
+				Ceci est une playlist pour vous mettre dans l'ambiance d'une rave.<br>Appuyez sur le CD pour lancer la playlist et appuyez de nouveau pour mettre pause.
+			</p>
+
+
+			<!--Import de la playlist-->
+			<audio id="musique">
+				<source src ="import/playlist.mp3" type="audio/mp3">
+			</audio>
+
+		
+			<!--Script qui permet de lancer et de mettre en pause la playlist, javascript-->
+			<script>
+				/*Bouton qui lance ou arrête la musique*/
+				btncd.onclick = function(){
+					if(musique.paused) {
+						musique.play();
+	
+					}else{
+						musique.pause()
+					}
+				}
+			</script>
+
+
+		<!--ENTER THE RAVE-->
+
+			<h4 id="titre_enter">Enter the rave</h4>
+
+			<video id="video" autoplay loop muted>
+				<source src="import/light.mp4" type="video/mp4">
+			</video>
+
+			<p id="rave_txt">Cliquez pour apporter de l'ambiance au site.</p>*
+
+			<img src="import/play.png" id="btnplay">
+			<img src="import/pause.png" id="btnpause">
+
+
+			<!-- Script pour lancer et arrêter les lumières de fond, javascript-->
+			<script>
+				/*Bouton pour arrêter les lumières de fond*/
+				btnplay.onclick = function(){
+						video.style.opacity=0.2
+					}
+
+				/*Bouton pour arrêter les lumières de fond*/
+				btnpause.onclick = function(){
+						video.style.opacity=0
+					}
+			</script>
+
+
+		<!--EN SAVOIR PLUS-->
+
+			<a href="https://fr.wikipedia.org/wiki/Rave_party" target="_blank"> 
+			<p id="wiki">En savoir plus</p></a>
+
+	</body>
+</html>
